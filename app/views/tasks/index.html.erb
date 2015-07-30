@@ -1,0 +1,8 @@
+<p>deneme</p>
+<ul>
+	<% @tasks.each do |task| %>
+	<li>
+		<%= task.name %> <%=link_to "Goruntule", task_path(task)%>
+	</li>
+	<%end%>
+</ul>
